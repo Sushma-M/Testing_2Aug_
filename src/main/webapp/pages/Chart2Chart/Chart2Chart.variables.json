@@ -1,0 +1,29 @@
+{
+  "SV_DeptCode" : {
+    "_id" : "wm-SV_DeptCode-wm.ServiceVariable-1469598796379",
+    "name" : "SV_DeptCode",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "deptcode",
+      "value" : "bind:Widgets.chart1.selecteditem.deptcode",
+      "type" : "string"
+    } ],
+    "type" : "hrdbSV_DeptCodertnType",
+    "service" : "hrdb",
+    "operation" : "executeSV_DeptCode",
+    "operationId" : "QueryExecutionController_executeSV_DeptCode",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "QueryExecution"
+  }
+}

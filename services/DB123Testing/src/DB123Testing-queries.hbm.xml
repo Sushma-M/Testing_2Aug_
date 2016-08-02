@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <sql-query name="SV_InsertTypes">
+    <![CDATA[
+      insert into Types_Spacing(ID,[Byte Col],[Short Col],[Int Col],[Long Col],[BigInt Col],[Float Col],[Double Col],[BigDec Col],[Char Col],[String Col],[Text Col],[Boolean Col],[Datetime Col],[Timestamp Col],[Date Col],[Time Col]) values(:id,:bytecol,:shortcol,:intcol,:longcol,:bigintcol,:floatcol,:doublecol,:bigdeccol,:charcol,:stringcol,:textcol,:booleancol,:datetimecol,:timestampcol,:datecol,:timecol)
+    ]]>
+  </sql-query>
+</hibernate-mapping>

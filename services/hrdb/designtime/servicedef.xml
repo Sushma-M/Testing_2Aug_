@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="hrdb" type="DataService" springFile="hrdb.spring.xml">
+    <operation operationType="nativequery" name="SV_TypesSpacing">
+        <return typeRef="hrdbSV_TypesSpacingrtnType" isList="false"/>
+    </operation>
+    <operation operationType="nativequery" name="SV_DeptCode">
+        <parameter name="deptcode" typeRef="java.lang.String" isList="false"/>
+        <return typeRef="hrdbSV_DeptCodertnType" isList="false"/>
+    </operation>
+    <operation operationType="nativequery" name="SV_Dept">
+        <return typeRef="hrdbSV_DeptrtnType" isList="false"/>
+    </operation>
+    <operation operationType="nativequery" name="SV_Employee">
+        <return typeRef="hrdbSV_EmployeertnType" isList="false"/>
+    </operation>
+    <operation operationType="nativequery" name="SV_DeptCode">
+        <parameter name="deptcode" typeRef="java.lang.String" isList="false"/>
+        <return typeRef="hrdbSV_DeptCodertnType" isList="false"/>
+    </operation>
+    <operation operationType="nativequery" name="SV_Dept">
+        <return typeRef="hrdbSV_DeptrtnType" isList="false"/>
+    </operation>
+    <operation operationType="nativequery" name="SV_Employee">
+        <return typeRef="hrdbSV_EmployeertnType" isList="false"/>
+    </operation>
+    <dataobjects>
+        <dataobject javaType="com.hrdb.User">
+            <element name="username" typeRef="java.lang.String" allowNull="true"/>
+            <element name="userid" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="role" typeRef="java.lang.String" allowNull="true"/>
+            <element name="tenantid" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="password" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.hrdb.Employee">
+            <element name="zip" typeRef="java.lang.String" allowNull="true"/>
+            <element name="department" typeRef="com.hrdb.Department" allowNull="true"/>
+            <element name="street" typeRef="java.lang.String" allowNull="true"/>
+            <element name="state" typeRef="java.lang.String" allowNull="true"/>
+            <element name="lastname" typeRef="java.lang.String" allowNull="true"/>
+            <element name="picurl" typeRef="java.lang.String" allowNull="true"/>
+            <element name="vacations" typeRef="com.hrdb.Vacation" isList="true" allowNull="true"/>
+            <element name="firstname" typeRef="java.lang.String" allowNull="true"/>
+            <element name="employeesForManagerid" typeRef="com.hrdb.Employee" isList="true" allowNull="true"/>
+            <element name="eid" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="password" typeRef="java.lang.String" allowNull="true"/>
+            <element name="city" typeRef="java.lang.String" allowNull="true"/>
+            <element name="employeeByManagerid" typeRef="com.hrdb.Employee" allowNull="true"/>
+            <element name="jobtitle" typeRef="java.lang.String" allowNull="true"/>
+            <element name="username" typeRef="java.lang.String" allowNull="true"/>
+            <element name="birthdate" typeRef="java.util.Date" allowNull="true"/>
+            <element name="role" typeRef="java.lang.String" allowNull="true"/>
+            <element name="tenantid" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.hrdb.Vacation">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="startdate" typeRef="java.util.Date" allowNull="true"/>
+            <element name="status" typeRef="java.lang.String" allowNull="true"/>
+            <element name="tenantid" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="employee" typeRef="com.hrdb.Employee" allowNull="true"/>
+            <element name="type" typeRef="java.lang.String" allowNull="true"/>
+            <element name="enddate" typeRef="java.util.Date" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.hrdb.Department">
+            <element name="budget" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="deptid" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="q2" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="location" typeRef="java.lang.String" allowNull="true"/>
+            <element name="q1" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="deptcode" typeRef="java.lang.String" allowNull="true"/>
+            <element name="q4" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="q3" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="name" typeRef="java.lang.String" allowNull="true"/>
+            <element name="tenantid" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="employees" typeRef="com.hrdb.Employee" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="hrdbSV_DeptCodertnType">
+            <element name="BUDGET" typeRef="java.lang.Integer"/>
+            <element name="LOCATION" typeRef="java.lang.String"/>
+            <element name="NAME" typeRef="java.lang.String"/>
+            <element name="Q1" typeRef="java.lang.Integer"/>
+            <element name="Q2" typeRef="java.lang.Integer"/>
+            <element name="Q3" typeRef="java.lang.Integer"/>
+            <element name="Q4" typeRef="java.lang.Integer"/>
+            <element name="DEPTCODE" typeRef="java.lang.String"/>
+            <element name="TENANTID" typeRef="java.lang.Integer"/>
+            <element name="DEPTID" typeRef="java.lang.Integer"/>
+        </dataobject>
+        <dataobject javaType="hrdbSV_DeptrtnType">
+            <element name="BUDGET" typeRef="java.lang.Integer"/>
+            <element name="LOCATION" typeRef="java.lang.String"/>
+            <element name="NAME" typeRef="java.lang.String"/>
+            <element name="Q1" typeRef="java.lang.Integer"/>
+            <element name="Q2" typeRef="java.lang.Integer"/>
+            <element name="Q3" typeRef="java.lang.Integer"/>
+            <element name="Q4" typeRef="java.lang.Integer"/>
+            <element name="DEPTCODE" typeRef="java.lang.String"/>
+            <element name="TENANTID" typeRef="java.lang.Integer"/>
+            <element name="DEPTID" typeRef="java.lang.Integer"/>
+        </dataobject>
+        <dataobject javaType="hrdbSV_EmployeertnType">
+            <element name="STATE" typeRef="java.lang.String"/>
+            <element name="BIRTHDATE" typeRef="java.sql.Date"/>
+            <element name="ROLE" typeRef="java.lang.String"/>
+            <element name="TENANTID" typeRef="java.lang.Integer"/>
+            <element name="EID" typeRef="java.lang.Integer"/>
+            <element name="STREET" typeRef="java.lang.String"/>
+            <element name="MANAGERID" typeRef="java.lang.String"/>
+            <element name="PICURL" typeRef="java.lang.String"/>
+            <element name="FIRSTNAME" typeRef="java.lang.String"/>
+            <element name="ZIP" typeRef="java.lang.String"/>
+            <element name="JOBTITLE" typeRef="java.lang.String"/>
+            <element name="USERNAME" typeRef="java.lang.String"/>
+            <element name="CITY" typeRef="java.lang.String"/>
+            <element name="PASSWORD" typeRef="java.lang.String"/>
+            <element name="DEPTID" typeRef="java.lang.Integer"/>
+            <element name="LASTNAME" typeRef="java.lang.String"/>
+        </dataobject>
+    </dataobjects>
+</service>

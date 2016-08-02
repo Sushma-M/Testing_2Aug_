@@ -1,0 +1,94 @@
+<wm-page data-ng-controller="Page2PageController" pagetitle="Page 2" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-tabs name="tabs1"> 
+                <wm-tabpane name="tabpane1" title="Area Chart"> 
+                    <wm-chart type="Area" name="chart1" dataset="bind:Variables.FDA.dataSet.results" xaxisdatakey="term" yaxisdatakey="count" tooltips="true"></wm-chart> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane2" title="Bar Chart"> 
+                    <wm-chart type="Bar" name="chart2" dataset="bind:Variables.FDA.dataSet.results" xaxisdatakey="term" yaxisdatakey="count"></wm-chart> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane3" title="Bubble Chart"> 
+                    <wm-chart type="Bubble" name="chart3" dataset="bind:Variables.FDA.dataSet.results" xaxisdatakey="term" yaxisdatakey="count"></wm-chart> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane4" title="Column Chart"> 
+                    <wm-chart type="Column" name="chart4" dataset="bind:Variables.FDA.dataSet.results" xaxisdatakey="term" yaxisdatakey="count"></wm-chart> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane5" title="Cumulative Line Chart"> 
+                    <wm-chart type="Cumulative Line" name="chart5" dataset="bind:Variables.FDA.dataSet.results" xaxisdatakey="term" yaxisdatakey="count"></wm-chart> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane6" title="Donut Chart"> 
+                    <wm-chart type="Donut" name="chart6" dataset="bind:Variables.FDA.dataSet.results" xaxisdatakey="term" yaxisdatakey="count" showlegend="hide"></wm-chart> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane7" title="Line Chart"> 
+                    <wm-chart type="Line" name="chart7" dataset="bind:Variables.FDA.dataSet.results" xaxisdatakey="term" yaxisdatakey="count"></wm-chart> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane8" title="Pie Chart"> 
+                    <wm-chart type="Pie" name="chart8" dataset="bind:Variables.FDA.dataSet.results" xaxisdatakey="term" yaxisdatakey="count" showlegend="hide"></wm-chart> 
+                </wm-tabpane> 
+            </wm-tabs> 
+            <wm-tabs name="tabs3" transition="none"> 
+                <wm-tabpane name="tabpane9" title="Department"> 
+                    <wm-grid readonlygrid="true" title="Department List" dataset="bind:Variables.HrdbDepartmentData.dataSet" navigation="Basic" name="grid3" on-click="Tab_Navigation"> 
+                        <wm-grid-column binding="deptid" caption="Deptid" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="name" caption="Name" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="budget" caption="Budget" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="q1" caption="Q1" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="q2" caption="Q2" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="q3" caption="Q3" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="q4" caption="Q4" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="deptcode" caption="Deptcode" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="location" caption="Location" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="tenantid" caption="Tenantid" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                    </wm-grid> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane10" title="Employee"> 
+                    <wm-grid readonlygrid="true" title="Employee List" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="Basic" name="grid4"> 
+                        <wm-grid-column binding="employeeByManagerid.eid" caption="Employee By Managerid Eid" type="integer" primary-key="true" generator="identity" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="firstname" caption="Firstname" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="lastname" caption="Lastname" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="street" caption="Street" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="city" caption="City" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="state" caption="State" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="zip" caption="Zip" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="birthdate" caption="Birthdate" type="date" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="picurl" caption="Picurl" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="jobtitle" caption="Jobtitle" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="username" caption="Username" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="password" caption="Password" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="role" caption="Role" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="tenantid" caption="Tenantid" type="integer" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="department.name" caption="Department Name" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="department.budget" caption="Department Budget" type="integer" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="department.q1" caption="Department Q1" type="integer" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="department.q2" caption="Department Q2" type="integer" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="department.q3" caption="Department Q3" type="integer" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="department.q4" caption="Department Q4" type="integer" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="department.deptcode" caption="Department Deptcode" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="department.location" caption="Department Location" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="department.tenantid" caption="Department Tenantid" type="integer" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.firstname" caption="Employee By Managerid Firstname" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.lastname" caption="Employee By Managerid Lastname" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.street" caption="Employee By Managerid Street" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.city" caption="Employee By Managerid City" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.state" caption="Employee By Managerid State" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.zip" caption="Employee By Managerid Zip" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.birthdate" caption="Employee By Managerid Birthdate" type="date" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.picurl" caption="Employee By Managerid Picurl" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.jobtitle" caption="Employee By Managerid Jobtitle" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.username" caption="Employee By Managerid Username" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.password" caption="Employee By Managerid Password" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.role" caption="Employee By Managerid Role" type="string" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="employeeByManagerid.tenantid" caption="Employee By Managerid Tenantid" type="integer" generator="assigned" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="eid" caption="Eid" type="integer" generator="identity" readonly="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                        <wm-grid-column binding="department.deptid" caption="Department Deptid" type="integer" generator="identity" readonly="true" is-related-pk="true" pcdisplay="true" mobiledisplay="true" show="true"></wm-grid-column> 
+                    </wm-grid> 
+                </wm-tabpane> 
+            </wm-tabs> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

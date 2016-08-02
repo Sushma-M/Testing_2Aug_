@@ -1,0 +1,23 @@
+{
+  "username" : "{WM_CLOUD_MYSQL_USER_NAME}",
+  "password" : "{WM_CLOUD_MYSQL_PASSWORD}",
+  "url" : "jdbc:mysql://{WM_CLOUD_MYSQL_HOST}/CompositesTest?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&createDatabaseIfNotExist=true",
+  "driverClass" : "com.mysql.jdbc.Driver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.MySQLDialect",
+  "serviceId" : "CompositesTest",
+  "packageName" : "com.testing26thjuly_.compositestest",
+  "dbType" : "MySQL",
+  "host" : "{WM_CLOUD_MYSQL_HOST}",
+  "dbName" : "CompositesTest",
+  "port" : null,
+  "schemaName" : "CompositesTest",
+  "tableFilter" : [ ".*" ],
+  "schemaFilter" : [ ".*" ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "update",
+  "maxPageSize" : 100,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "readOnly" : false
+}

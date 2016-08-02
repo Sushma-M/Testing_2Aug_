@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="WMSTUDIO" type="DataService" springFile="WMSTUDIO.spring.xml">
+    <dataobjects>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Login">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="loginname" typeRef="java.lang.String" allowNull="true"/>
+            <element name="pwd" typeRef="java.lang.String" allowNull="true"/>
+            <element name="role" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.CallRouting">
+            <element name="id" typeRef="java.lang.Double" allowNull="true"/>
+            <element name="keyName" typeRef="java.lang.String" allowNull="true"/>
+            <element name="categoryDefault" typeRef="java.lang.String" allowNull="true"/>
+            <element name="skill" typeRef="com.testing26thjuly_.wmstudio.Skill" allowNull="true"/>
+            <element name="lastModifiedUserId" typeRef="java.lang.Double" allowNull="true"/>
+            <element name="description" typeRef="java.lang.String" allowNull="true"/>
+            <element name="buId" typeRef="java.lang.String" allowNull="true"/>
+            <element name="routingPointId" typeRef="java.lang.Double" allowNull="true"/>
+            <element name="categoryId" typeRef="java.lang.Double" allowNull="true"/>
+            <element name="vqCategoryId" typeRef="java.lang.Double" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Table37">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table10" typeRef="com.testing26thjuly_.wmstudio.Table10" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Skill">
+            <element name="id" typeRef="java.lang.Double" allowNull="true"/>
+            <element name="cfgSkill" typeRef="com.testing26thjuly_.wmstudio.CfgSkill" allowNull="true"/>
+            <element name="lastModifiedUserId" typeRef="java.lang.Double" allowNull="true"/>
+            <element name="callRoutings" typeRef="com.testing26thjuly_.wmstudio.CallRouting" isList="true" allowNull="true"/>
+            <element name="code" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Alltypes">
+            <element name="textcol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="shortlongCol" typeRef="java.lang.Long" allowNull="true"/>
+            <element name="bishort" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="bytebdcol" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="timecol" typeRef="org.joda.time.LocalDateTime" allowNull="true"/>
+            <element name="clobchar" typeRef="java.lang.String" allowNull="true"/>
+            <element name="intcol" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="doublecol" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="blobcol" typeRef="java.lang.String" isList="true" allowNull="true"/>
+            <element name="timestampcol" typeRef="java.util.Date" allowNull="true"/>
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="bdbyte" typeRef="java.lang.String" allowNull="true"/>
+            <element name="boolean_" typeRef="java.lang.String" allowNull="true"/>
+            <element name="stringcol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="datecol" typeRef="org.joda.time.LocalDateTime" allowNull="true"/>
+            <element name="charstrcol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="longbicol" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="floatdoubleCol" typeRef="java.lang.Double" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Table10">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="longCol" typeRef="java.lang.Long" allowNull="true"/>
+            <element name="table37s" typeRef="com.testing26thjuly_.wmstudio.Table37" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.CfgSkill">
+            <element name="skills" typeRef="com.testing26thjuly_.wmstudio.Skill" isList="true" allowNull="true"/>
+            <element name="id" typeRef="java.lang.Double" allowNull="true"/>
+            <element name="name" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Table11">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column2" typeRef="org.joda.time.LocalDateTime" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Table112">
+            <element name="column1" typeRef="java.lang.Long" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.Long" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.YNtable">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="stringCol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="booleanCol" typeRef="java.lang.Boolean" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Composite1">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="stringCol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="table65" typeRef="com.testing26thjuly_.wmstudio.Table65" allowNull="true"/>
+            <element name="shortCol" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Employee">
+            <element name="jobtitle" typeRef="java.lang.String" allowNull="true"/>
+            <element name="username" typeRef="java.lang.String" allowNull="true"/>
+            <element name="street" typeRef="java.lang.String" allowNull="true"/>
+            <element name="role" typeRef="java.lang.String" allowNull="true"/>
+            <element name="lastname" typeRef="java.lang.String" allowNull="true"/>
+            <element name="firstname" typeRef="java.lang.String" allowNull="true"/>
+            <element name="password" typeRef="java.lang.String" allowNull="true"/>
+            <element name="eid" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="city" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Employee2">
+            <element name="jobtitle" typeRef="java.lang.String" allowNull="true"/>
+            <element name="username" typeRef="java.lang.String" allowNull="true"/>
+            <element name="street" typeRef="java.lang.String" allowNull="true"/>
+            <element name="role" typeRef="java.lang.String" allowNull="true"/>
+            <element name="lastname" typeRef="java.lang.String" allowNull="true"/>
+            <element name="firstname" typeRef="java.lang.String" allowNull="true"/>
+            <element name="password" typeRef="java.lang.String" allowNull="true"/>
+            <element name="eid" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="city" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Table29">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table29sForColumn3" typeRef="com.testing26thjuly_.wmstudio.Table29" isList="true" allowNull="true"/>
+            <element name="table29ByColumn3" typeRef="com.testing26thjuly_.wmstudio.Table29" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio._10table">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="stringCol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="booleanCol" typeRef="java.lang.Boolean" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Table9">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="stringCol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="datetimeCol" typeRef="org.joda.time.LocalDateTime" allowNull="true"/>
+            <element name="booleanCol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="dateCol" typeRef="org.joda.time.LocalDateTime" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.TFTable">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="stringCol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="booleanCol" typeRef="java.lang.Boolean" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Table2">
+            <element name="table2sForMergeFirmId" typeRef="com.testing26thjuly_.wmstudio.Table2" isList="true" allowNull="true"/>
+            <element name="id" typeRef="java.lang.Long" allowNull="true"/>
+            <element name="filterStatements" typeRef="java.lang.String" allowNull="true"/>
+            <element name="email" typeRef="java.lang.String" allowNull="true"/>
+            <element name="autoSend" typeRef="java.lang.String" allowNull="true"/>
+            <element name="firmnumber" typeRef="java.lang.String" allowNull="true"/>
+            <element name="note" typeRef="java.lang.String" allowNull="true"/>
+            <element name="table2ByMergeFirmId" typeRef="com.testing26thjuly_.wmstudio.Table2" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Table65Id">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="stringCol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="shortCol" typeRef="java.lang.Integer" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.wmstudio.Table65">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="stringCol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="composite1s" typeRef="com.testing26thjuly_.wmstudio.Composite1" isList="true" allowNull="true"/>
+            <element name="shortCol" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+    </dataobjects>
+</service>

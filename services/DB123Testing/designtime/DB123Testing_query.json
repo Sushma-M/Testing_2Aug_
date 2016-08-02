@@ -1,0 +1,135 @@
+{
+  "name" : "DB123Testing",
+  "description" : "Queries for DB123Testing",
+  "queries" : [ {
+    "name" : "SV_InsertTypes",
+    "query" : "insert into Types_Spacing(ID,[Byte Col],[Short Col],[Int Col],[Long Col],[BigInt Col],[Float Col],[Double Col],[BigDec Col],[Char Col],[String Col],[Text Col],[Boolean Col],[Datetime Col],[Timestamp Col],[Date Col],[Time Col]) values(:id,:bytecol,:shortcol,:intcol,:longcol,:bigintcol,:floatcol,:doublecol,:bigdeccol,:charcol,:stringcol,:textcol,:booleancol,:datetimecol,:timestampcol,:datecol,:timecol)",
+    "comment" : "",
+    "description" : null,
+    "nativeSql" : true,
+    "returnsSingleResult" : false,
+    "update" : true,
+    "queryParams" : [ {
+      "paramName" : "id",
+      "paramType" : "java.lang.Integer",
+      "testValue" : "673",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "bytecol",
+      "paramType" : "java.lang.Byte",
+      "testValue" : "67",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "shortcol",
+      "paramType" : "java.lang.Short",
+      "testValue" : "436",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "intcol",
+      "paramType" : "java.lang.Integer",
+      "testValue" : "3467",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "longcol",
+      "paramType" : "java.lang.Long",
+      "testValue" : "5648",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "bigintcol",
+      "paramType" : "java.math.BigInteger",
+      "testValue" : "5648",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "floatcol",
+      "paramType" : "java.lang.Float",
+      "testValue" : "5648",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "doublecol",
+      "paramType" : "java.lang.Double",
+      "testValue" : "458",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "bigdeccol",
+      "paramType" : "java.math.BigDecimal",
+      "testValue" : "6745",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "charcol",
+      "paramType" : "java.lang.Character",
+      "testValue" : "r",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "stringcol",
+      "paramType" : "java.lang.String",
+      "testValue" : "cgw",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "textcol",
+      "paramType" : "java.lang.String",
+      "testValue" : "fcgtr",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "booleancol",
+      "paramType" : "java.lang.Boolean",
+      "testValue" : "true",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "datetimecol",
+      "paramType" : "org.joda.time.LocalDateTime",
+      "testValue" : "2016-07-28T16:23:22",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "timestampcol",
+      "paramType" : "java.sql.Timestamp",
+      "testValue" : "1469703200000",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "datecol",
+      "paramType" : "java.sql.Date",
+      "testValue" : "2016-07-28",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    }, {
+      "paramName" : "timecol",
+      "paramType" : "java.sql.Time",
+      "testValue" : "16:23:51",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    } ],
+    "outputType" : "DB123TestingSV_InsertTypesrtnType",
+    "returnTypeMetadata" : { }
+  } ]
+}

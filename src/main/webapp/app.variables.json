@@ -1,0 +1,423 @@
+{
+  "appNotification" : {
+    "_id" : "wm-appErrorHandler-wm.NotificationVariable-1454664620943",
+    "name" : "appNotification",
+    "owner" : "App",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "class",
+      "value" : "Error",
+      "type" : "list"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "list"
+    } ],
+    "operation" : "toast"
+  },
+  "DeptData" : {
+    "_id" : "wm-DeptData-wm.ServiceVariable-1469598891108",
+    "name" : "DeptData",
+    "owner" : "App",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "hrdbSV_DeptrtnType",
+    "service" : "hrdb",
+    "operation" : "executeSV_Dept",
+    "operationId" : "QueryExecutionController_executeSV_Dept",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "QueryExecution"
+  },
+  "FDA" : {
+    "_id" : "wm-FDA-wm.ServiceVariable-1469600960943",
+    "name" : "FDA",
+    "owner" : "App",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "count",
+      "value" : "patient.reaction.reactionmeddrapt.exact",
+      "type" : "string"
+    }, {
+      "target" : "search",
+      "value" : "patient.drug.openfda.pharm_class_epc:\"nonsteroidal+anti-inflammatory+drug\"",
+      "type" : "string"
+    } ],
+    "type" : "fda.RootResponse",
+    "service" : "fda",
+    "operation" : "invoke",
+    "operationId" : "fda_RestServiceVirtualController-invoke",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false
+  },
+  "goToPage_Chart2Chart" : {
+    "_id" : "wm-goToPage_Chart2Chart-wm.NavigationVariable-1469598546403",
+    "name" : "goToPage_Chart2Chart",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Chart2Chart",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Charts" : {
+    "_id" : "wm-goToPage_Charts-wm.NavigationVariable-1469598393400",
+    "name" : "goToPage_Charts",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Charts",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Main" : {
+    "_id" : "wm-wm.NavigationVariable1389180517517",
+    "name" : "goToPage_Main",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Main"
+  },
+  "goToPage_Page10" : {
+    "_id" : "wm-goToPage_Page10-wm.NavigationVariable-1469598024766",
+    "name" : "goToPage_Page10",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Page10",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Page11" : {
+    "_id" : "wm-goToPage_Page11-wm.NavigationVariable-1469596217574",
+    "name" : "goToPage_Page11",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Page11",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Page111" : {
+    "_id" : "wm-goToPage_Page111-wm.NavigationVariable-1469703248473",
+    "name" : "goToPage_Page111",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Page111",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Page17" : {
+    "_id" : "wm-goToPage_Page17-wm.NavigationVariable-1469612741407",
+    "name" : "goToPage_Page17",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Page17",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Page18" : {
+    "_id" : "wm-goToPage_Page18-wm.NavigationVariable-1469612759910",
+    "name" : "goToPage_Page18",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "Page18",
+      "type" : "list"
+    } ],
+    "operation" : "gotoPage",
+    "pageName" : "Page18",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Page2" : {
+    "_id" : "wm-goToPage_Page2-wm.NavigationVariable-1469600411572",
+    "name" : "goToPage_Page2",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "Page2",
+      "type" : "list"
+    } ],
+    "operation" : "gotoPage",
+    "pageName" : "Page2",
+    "dataSet" : [ {
+      "type" : "integer",
+      "target" : "deptid",
+      "value" : "bind:Widgets.grid3.selecteditem.deptid"
+    } ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Page8" : {
+    "_id" : "wm-goToPage_Page8-wm.NavigationVariable-1469596686460",
+    "name" : "goToPage_Page8",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Page8",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "HrdbDeptData" : {
+    "_id" : "wm-HrdbDeptData-wm.LiveVariable-1469598452246",
+    "name" : "HrdbDeptData",
+    "owner" : "App",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ ],
+    "operation" : "read",
+    "dataSet" : [ ],
+    "type" : "Department",
+    "isList" : false,
+    "saveInPhonegap" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "liveSource" : "hrdb",
+    "ignoreCase" : false,
+    "matchMode" : "start",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "deptid",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "DEPTID",
+        "isPrimaryKey" : true,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "identity",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "name",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "NAME",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "budget",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "BUDGET",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "q1",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "Q1",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "q2",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "Q2",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "q3",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "Q3",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "q4",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "Q4",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "deptcode",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "DEPTCODE",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 20,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "location",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "LOCATION",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "tenantid",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "TENANTID",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      } ],
+      "entityName" : "Department",
+      "fullyQualifiedName" : "com.hrdb.Department",
+      "tableType" : "TABLE",
+      "primaryFields" : [ "deptid" ]
+    },
+    "bindCount" : 27,
+    "tableName" : "DEPARTMENT",
+    "tableType" : "TABLE",
+    "properties" : [ ],
+    "relatedTables" : [ ],
+    "filterFields" : { },
+    "package" : "com.hrdb.Department"
+  },
+  "supportedLocale" : {
+    "_id" : "wm-wm.Variable1402640443182",
+    "name" : "supportedLocale",
+    "owner" : "App",
+    "category" : "wm.Variable",
+    "dataSet" : {
+      "en" : "English"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "SV_Employee" : {
+    "_id" : "wm-SV_Employee-wm.ServiceVariable-1469599072905",
+    "name" : "SV_Employee",
+    "owner" : "App",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "hrdbSV_EmployeertnType",
+    "service" : "hrdb",
+    "operation" : "executeSV_Employee",
+    "operationId" : "QueryExecutionController_executeSV_Employee",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "QueryExecution"
+  },
+  "Tab_Navigation" : {
+    "_id" : "wm-Tab_Navigation-wm.NavigationVariable-1469612503542",
+    "name" : "Tab_Navigation",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "Page2",
+      "type" : "list"
+    }, {
+      "target" : "tabName",
+      "value" : "tabpane10",
+      "type" : "list"
+    } ],
+    "operation" : "gotoTab",
+    "dataSet" : [ {
+      "type" : "integer",
+      "target" : "deptid",
+      "value" : "bind:Widgets.grid3.selecteditem.deptid"
+    } ],
+    "pageTransitions" : "none"
+  },
+  "Tab_Navigation1" : {
+    "_id" : "wm-Tab_Navigation1-wm.NavigationVariable-1469613745442",
+    "name" : "Tab_Navigation1",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "Page18",
+      "type" : "list"
+    }, {
+      "target" : "tabName",
+      "value" : "tabpane3",
+      "type" : "list"
+    } ],
+    "operation" : "gotoTab",
+    "dataSet" : [ {
+      "type" : "integer",
+      "target" : "deptid",
+      "value" : "bind:Widgets.grid1.selecteditem.deptid"
+    } ],
+    "pageTransitions" : "none"
+  }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="TestingDb123" type="DataService" springFile="TestingDb123.spring.xml">
+    <dataobjects>
+        <dataobject javaType="com.testing26thjuly_.testingdb123.Table77">
+            <element name="id" typeRef="java.lang.Long" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.testingdb123.Table102">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.testingdb123.Table12">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table11" typeRef="com.testing26thjuly_.testingdb123.Table11" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.testingdb123.Table11">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table12" typeRef="com.testing26thjuly_.testingdb123.Table12" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.testingdb123.Table55">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.Long" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.testingdb123.Table29">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.testingdb123.Table6">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table1" typeRef="com.testing26thjuly_.testingdb123.Table1" allowNull="true"/>
+            <element name="col3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.testingdb123.Table7">
+            <element name="id" typeRef="java.lang.Long" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.Long" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column5" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.testingdb123.Table1">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="col3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="table6" typeRef="com.testing26thjuly_.testingdb123.Table6" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+    </dataobjects>
+</service>

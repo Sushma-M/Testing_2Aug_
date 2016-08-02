@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="CompositesTest" type="DataService" springFile="CompositesTest.spring.xml">
+    <dataobjects>
+        <dataobject javaType="com.testing26thjuly_.compositestest.Table8">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.compositestest.Table4">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="stringCol" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.compositestest.Table3">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.compositestest.Table1">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+    </dataobjects>
+</service>

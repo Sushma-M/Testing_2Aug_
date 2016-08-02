@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <sql-query name="SV_DeptCode">
+    <![CDATA[
+      select * from DEPARTMENT where DEPTCODE=:deptcode
+    ]]>
+  </sql-query>
+  <sql-query name="SV_Dept">
+    <![CDATA[
+      select * from DEPARTMENT
+    ]]>
+  </sql-query>
+  <sql-query name="SV_Employee">
+    <![CDATA[
+      select * from EMPLOYEE
+    ]]>
+  </sql-query>
+</hibernate-mapping>

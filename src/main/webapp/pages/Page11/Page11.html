@@ -1,0 +1,51 @@
+<wm-page data-ng-controller="Page11PageController" pagetitle="Page 11" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-grid readonlygrid="false" title="Table10 List" dataset="bind:Variables.DemoTable10Data.dataSet" navigation="Basic" name="grid1"> 
+                <wm-grid-column binding="table11.id" caption="Table11 Id" type="integer" primary-key="true" generator="identity" pcdisplay="true" mobiledisplay="true" edit-widget-type="select" dataset="bind:Variables.DemoTable11Data.dataSet" datafield="id" displayfield="id" show="true" readonly="false"></wm-grid-column> 
+                <wm-grid-column binding="column3" caption="Column3" type="string" generator="assigned" pcdisplay="true" mobiledisplay="true" show="true" readonly="false"></wm-grid-column> 
+                <wm-grid-column binding="table11.column2" caption="Table11 Column2" type="string" generator="assigned" pcdisplay="true" mobiledisplay="true" show="true" readonly="false"></wm-grid-column> 
+                <wm-grid-column binding="table11.column3" caption="Table11 Column3" type="string" generator="assigned" pcdisplay="true" mobiledisplay="true" show="true" readonly="false"></wm-grid-column> 
+                <wm-grid-column binding="table11.column4" caption="Table11 Column4" type="string" generator="assigned" pcdisplay="true" mobiledisplay="true" show="true" readonly="false"></wm-grid-column> 
+                <wm-grid-column binding="rowOperations" caption="Actions" type="custom" readonly="true" pcdisplay="true" mobiledisplay="true" sortable="false" searchable="false" show="true"></wm-grid-column> 
+                <wm-grid-column binding="id" caption="Id" type="integer" generator="identity" pcdisplay="true" mobiledisplay="true" show="true" readonly="false"></wm-grid-column> 
+                <wm-grid-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="wi wi-plus" title="New" action="addNewRow()"></wm-grid-action> 
+                <wm-grid-row-action key="updaterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-pencil" title="Edit" action="editRow()"></wm-grid-row-action> 
+                <wm-grid-row-action key="deleterow" display-name="" show="true" class="btn-transparent" iconclass="wi wi-trash" title="Delete" action="deleteRow()"></wm-grid-row-action> 
+            </wm-grid> 
+            <wm-livegrid formlayout="dialog" name="livegrid1"> 
+                <wm-grid gridfirstrowselect="true" readonlygrid="false" title="Table11 List" dataset="bind:Variables.DemoTable11Data.dataSet" navigation="Basic" name="grid2"> 
+                    <wm-grid-column binding="id" caption="Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true"></wm-grid-column> 
+                    <wm-grid-column binding="column2" caption="Column2" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column> 
+                    <wm-grid-column binding="column3" caption="Column3" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column> 
+                    <wm-grid-column binding="column4" caption="Column4" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column> 
+                    <wm-grid-action key="addNewRow" display-name="New" iconclass="wi wi-plus" show="true" class="btn-primary" action="addNewRow()" position="footer"></wm-grid-action> 
+                    <wm-grid-row-action key="updaterow" display-name="" title="Edit" iconclass="wi wi-pencil" show="true" class="btn-transparent" action="editRow()"></wm-grid-row-action> 
+                    <wm-grid-row-action key="deleterow" display-name="" title="Delete" iconclass="wi wi-trash" show="true" class="btn-transparent" action="deleteRow()"></wm-grid-row-action> 
+                </wm-grid> 
+                <wm-liveform novalidate="false" title="Table11 Info" formlayout="dialog" dataset="bind:Variables.DemoTable11Data.dataSet" captionalign="left" captionposition="top" name="liveform1"> 
+                    <wm-layoutgrid columns="3" name="layoutgrid1"> 
+                        <wm-gridrow name="gridrow1"> 
+                            <wm-gridcolumn columnwidth="4" name="gridcolumn1"> 
+                                <wm-form-field name="column2" displayname="Column2" required="false" show="true" generator="assigned" primary-key="false" key="column2" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true" widget="text"></wm-form-field> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="4" name="gridcolumn2"> 
+                                <wm-form-field name="column3" displayname="Column3" required="false" show="true" generator="assigned" primary-key="false" key="column3" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true" widget="text"></wm-form-field> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="4" name="gridcolumn3"> 
+                                <wm-form-field name="column4" displayname="Column4" required="false" show="true" generator="assigned" primary-key="false" key="column4" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true" widget="text"></wm-form-field> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                    </wm-layoutgrid> 
+                    <wm-form-field name="id" displayname="Id" required="true" show="false" generator="identity" primary-key="true" key="id" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true" widget="number"></wm-form-field> 
+                    <wm-form-action key="cancel" class="form-cancel btn-secondary" iconclass="wi wi-cancel" action="cancel()" display-name="Cancel" show="true" type="button" update-mode="true"></wm-form-action> 
+                    <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action> 
+                </wm-liveform> 
+            </wm-livegrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

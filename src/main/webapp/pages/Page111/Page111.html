@@ -1,0 +1,113 @@
+<wm-page data-ng-controller="Page111PageController" pagetitle="Page 111" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-form captionposition="top" title="Form" enctype="application/x-www-form-urlencoded" method="post" formvariable="DB123TestingExecuteSV_InsertTypes" captionalign="left" name="form1"> 
+                <wm-layoutgrid columns="2" name="layoutgrid1"> 
+                    <wm-gridrow name="gridrow1"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn1"> 
+                            <wm-form-field readonly="false" name="id" displayname="id" target="id" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn2"> 
+                            <wm-form-field readonly="false" name="bytecol" displayname="bytecol" target="bytecol" type="string" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow2"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn3"> 
+                            <wm-form-field readonly="false" name="shortcol" displayname="shortcol" target="shortcol" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn4"> 
+                            <wm-form-field readonly="false" name="intcol" displayname="intcol" target="intcol" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow3"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn5"> 
+                            <wm-form-field readonly="false" name="longcol" displayname="longcol" target="longcol" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn6"> 
+                            <wm-form-field readonly="false" name="bigintcol" displayname="bigintcol" target="bigintcol" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow4"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn7"> 
+                            <wm-form-field readonly="false" name="floatcol" displayname="floatcol" target="floatcol" type="number" show="true" widget="null"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn8"> 
+                            <wm-form-field readonly="false" name="doublecol" displayname="doublecol" target="doublecol" type="number" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow5"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn9"> 
+                            <wm-form-field readonly="false" name="bigdeccol" displayname="bigdeccol" target="bigdeccol" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn10"> 
+                            <wm-form-field readonly="false" name="charcol" displayname="charcol" target="charcol" type="string" show="true" widget="text"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow6"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn11"> 
+                            <wm-form-field readonly="false" name="stringcol" displayname="stringcol" target="stringcol" type="string" show="true" widget="text"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn12"> 
+                            <wm-form-field readonly="false" name="textcol" displayname="textcol" target="textcol" type="string" show="true" widget="text"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow7"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn13"> 
+                            <wm-form-field readonly="false" name="booleancol" displayname="booleancol" target="booleancol" type="boolean" show="true" widget="checkbox"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn14"> 
+                            <wm-form-field readonly="false" name="datetimecol" displayname="datetimecol" target="datetimecol" type="string" show="true" widget="timestamp"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow8"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn15"> 
+                            <wm-form-field readonly="false" name="timestampcol" displayname="timestampcol" target="timestampcol" type="string" show="true" widget="timestamp"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn16"> 
+                            <wm-form-field readonly="false" name="datecol" displayname="datecol" target="datecol" type="string" show="true" widget="date"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow9"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn17"> 
+                            <wm-form-field readonly="false" name="timecol" displayname="timecol" target="timecol" type="string" show="true" widget="time"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup1"> 
+                    <wm-button caption="Reset" type="reset" class="btn-secondary" name="button1"></wm-button> 
+                    <wm-button caption="Cancel" type="button" class="btn-warning" name="button2"></wm-button> 
+                    <wm-button caption="Save" type="submit" class="btn-primary" name="button3"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+            <wm-livegrid formlayout="dialog" name="livegrid1"> 
+                <wm-grid gridfirstrowselect="true" readonlygrid="false" title="1_0table List" dataset="bind:Variables.DB123Testing_10tableData.dataSet" navigation="Basic" name="grid1"> 
+                    <wm-grid-column binding="id" caption="Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true"></wm-grid-column> 
+                    <wm-grid-column binding="stringCol" caption="String Col" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column> 
+                    <wm-grid-column binding="booleanCol" caption="Boolean Col" generator="assigned" pcdisplay="true" mobiledisplay="true" type="boolean"></wm-grid-column> 
+                    <wm-grid-action key="addNewRow" display-name="New" iconclass="wi wi-plus" show="true" class="btn-primary" action="addNewRow()" position="footer"></wm-grid-action> 
+                    <wm-grid-row-action key="updaterow" display-name="" title="Edit" iconclass="wi wi-pencil" show="true" class="btn-transparent" action="editRow()"></wm-grid-row-action> 
+                    <wm-grid-row-action key="deleterow" display-name="" title="Delete" iconclass="wi wi-trash" show="true" class="btn-transparent" action="deleteRow()"></wm-grid-row-action> 
+                </wm-grid> 
+                <wm-liveform novalidate="false" title="1_0table Info" formlayout="dialog" dataset="bind:Variables.DB123Testing_10tableData.dataSet" captionalign="left" captionposition="top" name="liveform1"> 
+                    <wm-layoutgrid columns="2" name="layoutgrid2"> 
+                        <wm-gridrow name="gridrow10"> 
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn18"> 
+                                <wm-form-field name="stringCol" displayname="String Col" required="false" show="true" generator="assigned" primary-key="false" key="stringCol" type="string" is-related="false" maxchars="255" pc-display="true" mobile-display="true" widget="text"></wm-form-field> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn19"> 
+                                <wm-form-field name="booleanCol" displayname="Boolean Col" required="false" show="true" generator="assigned" primary-key="false" key="booleanCol" type="boolean" is-related="false" pc-display="true" mobile-display="true" widget="checkbox" checkedvalue="1" uncheckedvalue="0"></wm-form-field> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                    </wm-layoutgrid> 
+                    <wm-form-field name="id" displayname="Id" required="true" show="false" generator="identity" primary-key="true" key="id" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true" widget="number"></wm-form-field> 
+                    <wm-form-action key="cancel" class="form-cancel btn-secondary" iconclass="wi wi-cancel" action="cancel()" display-name="Cancel" show="true" type="button" update-mode="true"></wm-form-action> 
+                    <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action> 
+                </wm-liveform> 
+            </wm-livegrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

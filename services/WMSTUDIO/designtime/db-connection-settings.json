@@ -1,0 +1,23 @@
+{
+  "username" : "saraswathi",
+  "password" : "7b6a43524a362c086a7f707d0b092c70477c612a43",
+  "url" : "jdbc:oracle:thin:@//52.12.60.149:1521/WMSTUDIO",
+  "driverClass" : "oracle.jdbc.driver.OracleDriver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.OracleDialect",
+  "serviceId" : "WMSTUDIO",
+  "packageName" : "com.testing26thjuly_.wmstudio",
+  "dbType" : "Oracle",
+  "host" : "52.12.60.149",
+  "dbName" : "WMSTUDIO",
+  "port" : "1521",
+  "schemaName" : "SARASWATHI",
+  "tableFilter" : [ ".*" ],
+  "schemaFilter" : [ "SARASWATHI" ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "none",
+  "maxPageSize" : 100,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "readOnly" : false
+}

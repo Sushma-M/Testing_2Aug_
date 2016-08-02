@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="Demo" type="DataService" springFile="Demo.spring.xml">
+    <dataobjects>
+        <dataobject javaType="com.testing26thjuly_.demo.Table13">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table14" typeRef="com.testing26thjuly_.demo.Table14" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table14">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="table13" typeRef="com.testing26thjuly_.demo.Table13" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table18">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column6" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table42s" typeRef="com.testing26thjuly_.demo.Table42" isList="true" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table19">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table9s" typeRef="com.testing26thjuly_.demo.Table9" isList="true" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.ViewTable1">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column5" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table10">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table11" typeRef="com.testing26thjuly_.demo.Table11" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table12">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table11">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table10s" typeRef="com.testing26thjuly_.demo.Table10" isList="true" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table18Id">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table8">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table1" typeRef="com.testing26thjuly_.demo.Table1" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table9">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table19" typeRef="com.testing26thjuly_.demo.Table19" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="table20" typeRef="com.testing26thjuly_.demo.Table20" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table20">
+            <element name="id" typeRef="java.lang.String" allowNull="true"/>
+            <element name="table9s" typeRef="com.testing26thjuly_.demo.Table9" isList="true" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table42">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table18" typeRef="com.testing26thjuly_.demo.Table18" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column5" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.testing26thjuly_.demo.Table1">
+            <element name="id" typeRef="java.lang.Integer" allowNull="true"/>
+            <element name="table8s" typeRef="com.testing26thjuly_.demo.Table8" isList="true" allowNull="true"/>
+            <element name="column3" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column2" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column5" typeRef="java.lang.String" allowNull="true"/>
+            <element name="column4" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+    </dataobjects>
+</service>

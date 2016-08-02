@@ -1,0 +1,39 @@
+{
+  "endpointAddress" : "https://api.fda.gov/drug/event.json",
+  "method" : "GET",
+  "contentType" : "text/xml",
+  "requestBody" : "",
+  "authType" : "NONE",
+  "headers" : { },
+  "queryParams" : {
+    "count" : "patient.reaction.reactionmeddrapt.exact",
+    "search" : "patient.drug.openfda.pharm_class_epc:\"nonsteroidal+anti-inflammatory+drug\""
+  },
+  "sampleRestResponse" : {
+    "responseBody" : "{\"meta\":{\"disclaimer\":\"Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.\",\"terms\":\"https://open.fda.gov/terms/\",\"license\":\"https://open.fda.gov/license/\",\"last_updated\":\"2015-01-01\"},\"results\":[{\"term\":\"DRUG INEFFECTIVE\",\"count\":25443},{\"term\":\"NAUSEA\",\"count\":23156},{\"term\":\"PAIN\",\"count\":20398},{\"term\":\"DYSPNOEA\",\"count\":20022},{\"term\":\"DIZZINESS\",\"count\":18195},{\"term\":\"FATIGUE\",\"count\":18071},{\"term\":\"MYOCARDIAL INFARCTION\",\"count\":17749},{\"term\":\"HEADACHE\",\"count\":17435},{\"term\":\"DIARRHOEA\",\"count\":15873},{\"term\":\"VOMITING\",\"count\":14597},{\"term\":\"ARTHRALGIA\",\"count\":13304},{\"term\":\"ASTHENIA\",\"count\":13247},{\"term\":\"FLUSHING\",\"count\":12106},{\"term\":\"CEREBROVASCULAR ACCIDENT\",\"count\":12003},{\"term\":\"PAIN IN EXTREMITY\",\"count\":11981},{\"term\":\"FALL\",\"count\":11812},{\"term\":\"PRURITUS\",\"count\":11634},{\"term\":\"CHEST PAIN\",\"count\":11540},{\"term\":\"MALAISE\",\"count\":10770},{\"term\":\"PYREXIA\",\"count\":10270},{\"term\":\"ANXIETY\",\"count\":10122},{\"term\":\"RASH\",\"count\":9998},{\"term\":\"BACK PAIN\",\"count\":9627},{\"term\":\"DEPRESSION\",\"count\":9293},{\"term\":\"HYPERTENSION\",\"count\":9280},{\"term\":\"ANAEMIA\",\"count\":9194},{\"term\":\"PNEUMONIA\",\"count\":9005},{\"term\":\"OEDEMA PERIPHERAL\",\"count\":8984},{\"term\":\"WEIGHT DECREASED\",\"count\":8913},{\"term\":\"INSOMNIA\",\"count\":8672},{\"term\":\"ABDOMINAL PAIN\",\"count\":8313},{\"term\":\"GASTROINTESTINAL HAEMORRHAGE\",\"count\":8087},{\"term\":\"HYPOTENSION\",\"count\":7883},{\"term\":\"RENAL FAILURE ACUTE\",\"count\":7879},{\"term\":\"ABDOMINAL PAIN UPPER\",\"count\":7759},{\"term\":\"COUGH\",\"count\":7550},{\"term\":\"PARAESTHESIA\",\"count\":7484},{\"term\":\"CARDIAC FAILURE CONGESTIVE\",\"count\":7346},{\"term\":\"FEELING ABNORMAL\",\"count\":7243},{\"term\":\"MYALGIA\",\"count\":6798},{\"term\":\"CONSTIPATION\",\"count\":6708},{\"term\":\"DRUG INTERACTION\",\"count\":6648},{\"term\":\"DEATH\",\"count\":6613},{\"term\":\"BLOOD GLUCOSE INCREASED\",\"count\":6590},{\"term\":\"ERYTHEMA\",\"count\":6326},{\"term\":\"SOMNOLENCE\",\"count\":6273},{\"term\":\"GAIT DISTURBANCE\",\"count\":6180},{\"term\":\"DRUG HYPERSENSITIVITY\",\"count\":6148},{\"term\":\"MUSCLE SPASMS\",\"count\":6146},{\"term\":\"DEHYDRATION\",\"count\":6044},{\"term\":\"CONFUSIONAL STATE\",\"count\":5976},{\"term\":\"WEIGHT INCREASED\",\"count\":5933},{\"term\":\"HYPOAESTHESIA\",\"count\":5922},{\"term\":\"PULMONARY EMBOLISM\",\"count\":5902},{\"term\":\"RENAL FAILURE\",\"count\":5842},{\"term\":\"DECREASED APPETITE\",\"count\":5767},{\"term\":\"CONDITION AGGRAVATED\",\"count\":5764},{\"term\":\"BLOOD PRESSURE INCREASED\",\"count\":5761},{\"term\":\"HAEMOGLOBIN DECREASED\",\"count\":5694},{\"term\":\"ATRIAL FIBRILLATION\",\"count\":5551},{\"term\":\"INJECTION SITE PAIN\",\"count\":5547},{\"term\":\"HYPERHIDROSIS\",\"count\":5442},{\"term\":\"URINARY TRACT INFECTION\",\"count\":5423},{\"term\":\"TREMOR\",\"count\":5276},{\"term\":\"INJURY\",\"count\":5248},{\"term\":\"DEEP VEIN THROMBOSIS\",\"count\":5229},{\"term\":\"LOSS OF CONSCIOUSNESS\",\"count\":5200},{\"term\":\"OFF LABEL USE\",\"count\":5166},{\"term\":\"CORONARY ARTERY DISEASE\",\"count\":5091},{\"term\":\"ABDOMINAL DISCOMFORT\",\"count\":5068},{\"term\":\"HYPERSENSITIVITY\",\"count\":4959},{\"term\":\"URTICARIA\",\"count\":4759},{\"term\":\"DYSPEPSIA\",\"count\":4735},{\"term\":\"VISION BLURRED\",\"count\":4682},{\"term\":\"SYNCOPE\",\"count\":4588},{\"term\":\"MUSCULAR WEAKNESS\",\"count\":4478},{\"term\":\"PALPITATIONS\",\"count\":4432},{\"term\":\"FEELING HOT\",\"count\":4370},{\"term\":\"CONTUSION\",\"count\":4236},{\"term\":\"ARTHRITIS\",\"count\":4162},{\"term\":\"GASTROOESOPHAGEAL REFLUX DISEASE\",\"count\":4115},{\"term\":\"HAEMORRHAGE\",\"count\":4111},{\"term\":\"CHILLS\",\"count\":3937},{\"term\":\"CHEST DISCOMFORT\",\"count\":3863},{\"term\":\"CONVULSION\",\"count\":3859},{\"term\":\"NASOPHARYNGITIS\",\"count\":3824},{\"term\":\"JOINT SWELLING\",\"count\":3760},{\"term\":\"OVERDOSE\",\"count\":3722},{\"term\":\"BLOOD CREATININE INCREASED\",\"count\":3711},{\"term\":\"DRUG DOSE OMISSION\",\"count\":3710},{\"term\":\"DIABETES MELLITUS\",\"count\":3696},{\"term\":\"CARDIAC DISORDER\",\"count\":3640},{\"term\":\"CARDIAC ARREST\",\"count\":3617},{\"term\":\"HEART RATE INCREASED\",\"count\":3605},{\"term\":\"INCORRECT DOSE ADMINISTERED\",\"count\":3600},{\"term\":\"ACUTE MYOCARDIAL INFARCTION\",\"count\":3535},{\"term\":\"SEPSIS\",\"count\":3534},{\"term\":\"TRANSIENT ISCHAEMIC ATTACK\",\"count\":3410},{\"term\":\"DYSPHAGIA\",\"count\":3392},{\"term\":\"EMOTIONAL DISTRESS\",\"count\":3326}]}",
+    "convertedResponse" : null,
+    "statusCode" : 200,
+    "responseHeaders" : {
+      "Age" : [ "0" ],
+      "ETag" : [ "W/\"1b29-7URSxQmw4Xs9AB43A1dUug\"" ],
+      "transfer-encoding" : [ "chunked" ],
+      "X-XSS-Protection" : [ "1; mode=block" ],
+      "Connection" : [ "keep-alive" ],
+      "Server" : [ "openresty" ],
+      "X-Cache" : [ "MISS" ],
+      "X-Content-Type-Options" : [ "nosniff" ],
+      "Cache-Control" : [ "public, max-age=60" ],
+      "X-Frame-Options" : [ "deny" ],
+      "Access-Control-Allow-Headers" : [ "X-Requested-With" ],
+      "Access-Control-Allow-Origin" : [ "*" ],
+      "Date" : [ "Wed, 27 Jul 2016 06:28:46 GMT" ],
+      "Vary" : [ "Accept-Encoding", "Accept-Encoding", "Accept-Encoding" ],
+      "Via" : [ "http/1.1 api-umbrella (ApacheTrafficServer [cMsSfW])" ],
+      "Content-Type" : [ "application/json; charset=utf-8" ],
+      "Content-Security-Policy" : [ "default-src 'none'" ]
+    },
+    "contentType" : "application/json",
+    "cookies" : [ ]
+  },
+  "redirectEnabled" : true
+}

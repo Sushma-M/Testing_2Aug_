@@ -1,0 +1,26 @@
+<wm-page data-ng-controller="Page17PageController" pagetitle="Page 17" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-tabs name="tabs1" horizontalalign="left"> 
+                <wm-tabpane name="tabpane1"> 
+                    <wm-grid readonlygrid="true" title="Department List" dataset="bind:Variables.HrdbDepartmentData.dataSet" navigation="Basic" name="grid1" on-click="Tab_Navigation1"> 
+                        <wm-grid-column binding="deptid" caption="Deptid" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="name" caption="Name" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="budget" caption="Budget" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="q1" caption="Q1" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="q2" caption="Q2" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="q3" caption="Q3" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="q4" caption="Q4" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="deptcode" caption="Deptcode" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="location" caption="Location" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string" readonly="true"></wm-grid-column> 
+                        <wm-grid-column binding="tenantid" caption="Tenantid" generator="assigned" pcdisplay="true" mobiledisplay="true" type="integer" readonly="true"></wm-grid-column> 
+                    </wm-grid> 
+                </wm-tabpane> 
+            </wm-tabs> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

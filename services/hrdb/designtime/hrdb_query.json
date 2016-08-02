@@ -1,0 +1,84 @@
+{
+  "name" : "hrdb",
+  "description" : "Queries for hrdb",
+  "queries" : [ {
+    "name" : "SV_DeptCode",
+    "query" : "select * from DEPARTMENT where DEPTCODE=:deptcode",
+    "comment" : "",
+    "description" : null,
+    "nativeSql" : true,
+    "returnsSingleResult" : false,
+    "update" : false,
+    "queryParams" : [ {
+      "paramName" : "deptcode",
+      "paramType" : "java.lang.String",
+      "testValue" : "Eng",
+      "systemParamName" : null,
+      "systemParam" : false,
+      "list" : false
+    } ],
+    "outputType" : "hrdbSV_DeptCodertnType",
+    "returnTypeMetadata" : {
+      "BUDGET" : "java.lang.Integer",
+      "LOCATION" : "java.lang.String",
+      "NAME" : "java.lang.String",
+      "Q1" : "java.lang.Integer",
+      "Q2" : "java.lang.Integer",
+      "Q3" : "java.lang.Integer",
+      "Q4" : "java.lang.Integer",
+      "DEPTCODE" : "java.lang.String",
+      "TENANTID" : "java.lang.Integer",
+      "DEPTID" : "java.lang.Integer"
+    }
+  }, {
+    "name" : "SV_Dept",
+    "query" : "select * from DEPARTMENT",
+    "comment" : "",
+    "description" : null,
+    "nativeSql" : true,
+    "returnsSingleResult" : false,
+    "update" : false,
+    "queryParams" : [ ],
+    "outputType" : "hrdbSV_DeptrtnType",
+    "returnTypeMetadata" : {
+      "BUDGET" : "java.lang.Integer",
+      "LOCATION" : "java.lang.String",
+      "NAME" : "java.lang.String",
+      "Q1" : "java.lang.Integer",
+      "Q2" : "java.lang.Integer",
+      "Q3" : "java.lang.Integer",
+      "Q4" : "java.lang.Integer",
+      "DEPTCODE" : "java.lang.String",
+      "TENANTID" : "java.lang.Integer",
+      "DEPTID" : "java.lang.Integer"
+    }
+  }, {
+    "name" : "SV_Employee",
+    "query" : "select * from EMPLOYEE",
+    "comment" : "",
+    "description" : null,
+    "nativeSql" : true,
+    "returnsSingleResult" : false,
+    "update" : false,
+    "queryParams" : [ ],
+    "outputType" : "hrdbSV_EmployeertnType",
+    "returnTypeMetadata" : {
+      "STATE" : "java.lang.String",
+      "BIRTHDATE" : "java.sql.Date",
+      "ROLE" : "java.lang.String",
+      "TENANTID" : "java.lang.Integer",
+      "EID" : "java.lang.Integer",
+      "STREET" : "java.lang.String",
+      "MANAGERID" : "java.lang.String",
+      "PICURL" : "java.lang.String",
+      "FIRSTNAME" : "java.lang.String",
+      "ZIP" : "java.lang.String",
+      "JOBTITLE" : "java.lang.String",
+      "USERNAME" : "java.lang.String",
+      "CITY" : "java.lang.String",
+      "PASSWORD" : "java.lang.String",
+      "DEPTID" : "java.lang.Integer",
+      "LASTNAME" : "java.lang.String"
+    }
+  } ]
+}
